@@ -4,14 +4,13 @@
     ViewData["Title"] = "Vendas";
 }
 
-<h1>Vendas</h1>
-
+<h1 class="display-5 text-light my-5">Vendas</h1>
 <p>
     <a asp-action="Create" class="btn btn-lg btn-outline-light d-inline-flex align-items-center">
         <svg class="me-3" bootstrap-icon="PlusLg" width="20" height="20" aria-label="Adicionar"></svg> Adicionar
     </a>
 </p>
-<table class="table table-dark table-striped table-hover">
+<table class="table table-hover text-secondary">
     <thead>
         <tr>
             <th>
@@ -45,9 +44,18 @@
                 @Html.DisplayFor(modelItem => item.Cliente.CPF)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.VendaId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.VendaId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.VendaId">Delete</a>
+
+                    <a class="text-decoration-none link-secondary btn btn-outline-light"
+                       asp-controller="ItensDaVenda" asp-action="Create" asp-route-id="@item.VendaId">
+                        <svg class="mx-1" bootstrap-icon="PlusLg" width="20" height="20" aria-label="Adicionar"></svg>
+                        Novo Item
+                    </a>
+                    <a class="text-decoration-none link-secondary" asp-action="Edit" asp-route-id="@item.VendaId">
+                        <svg class="mx-2" bootstrap-icon="PencilFill" width="16" height="16" aria-label="Editar"></svg>
+                    </a>
+                    <a class="text-decoration-none link-secondary" asp-action="Delete" asp-route-id="@item.VendaId">
+                        <svg class="mx-2" bootstrap-icon="Trash" width="16" height="16" aria-label="Excluir"></svg>
+                    </a>
             </td>
         </tr>
 }

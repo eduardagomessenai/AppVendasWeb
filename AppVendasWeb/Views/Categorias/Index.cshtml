@@ -11,7 +11,7 @@
         <svg class="me-3" bootstrap-icon="PlusLg" width="20" height="20" aria-label="Adicionar"></svg> Adicionar
     </a>
 </p>
-<table class="table table-dark table-striped table-hover">
+<table class="table table-hover text-secondary">
     <thead>
         <tr>
             <th>
@@ -28,13 +28,13 @@
                     @Html.DisplayFor(modelItem => item.CategoriaNome)
                 </td>
                 <td class="tex">
-                    <a class="text-decoration-none link-light" asp-action="Edit" asp-route-id="@item.CategoriaId">
+                    <a class="text-decoration-none link-secondary" asp-action="Edit" asp-route-id="@item.CategoriaId">
                         <svg class="mx-2" bootstrap-icon="PencilFill" width="16" height="16" aria-label="Editar"></svg>
                     </a>
-                    <a class="text-decoration-none link-light" asp-action="Details" asp-route-id="@item.CategoriaId">
+                    <a class="text-decoration-none link-secondary" asp-action="Details" asp-route-id="@item.CategoriaId">
                         <svg class="mx-2" bootstrap-icon="CardList" width="16" height="16" aria-label="Detalhes"></svg>
                     </a>
-                    <a class="text-decoration-none link-light" asp-action="Delete" asp-route-id="@item.CategoriaId">
+                    <a class="text-decoration-none link-secondary" asp-action="Delete" asp-route-id="@item.CategoriaId">
                         <svg class="mx-2" bootstrap-icon="Trash" width="16" height="16" aria-label="Excluir"></svg>
                     </a>
                 </td>

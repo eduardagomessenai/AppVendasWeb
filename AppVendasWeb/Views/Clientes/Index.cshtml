@@ -13,7 +13,7 @@
 </p>
 
 <div class="table-responsive">
-    <table class="table table-dark table-striped table-hover">
+    <table class="table table-hover text-secondary">
         <thead>
             <tr>
                 <th>
@@ -65,13 +65,13 @@
                     <td class="text-center d-flex justify-content-center center">
 
                         <span>@Html.DisplayFor(modelItem => item.CadastroAtivo)</span>
-                        <a class="text-decoration-none link-light" asp-action="Edit" asp-route-id="@item.ClienteId">
+                        <a class="text-decoration-none link-secondary" asp-action="Edit" asp-route-id="@item.ClienteId">
                             <svg class="mx-2" bootstrap-icon="PencilFill" width="16" height="16" aria-label="Editar"></svg>
                         </a>
-                        <a class="text-decoration-none link-light" asp-action="Details" asp-route-id="@item.ClienteId">
+                        <a class="text-decoration-none link-secondary" asp-action="Details" asp-route-id="@item.ClienteId">
                             <svg class="mx-2" bootstrap-icon="CardList" width="16" height="16" aria-label="Detalhes"></svg>
                         </a>
-                        <a class="text-decoration-none link-light" asp-action="Delete" asp-route-id="@item.ClienteId">
+                        <a class="text-decoration-none link-secondary" asp-action="Delete" asp-route-id="@item.ClienteId">
                             <svg class="mx-2" bootstrap-icon="Trash" width="16" height="16" aria-label="Excluir"></svg>
                         </a>
                     </td>
